@@ -1,0 +1,264 @@
+:root {
+    --teal:#4aaaa5;
+    --general_font_color:#777777;
+    --main_header:#cccccc;
+    --main_header_border:#666666;
+    --footer_background: #ffffff;
+    --main_content_background: #ececec;
+    --main_content_border: #dddddd;
+    --general_font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    --pic_width: 30%;
+    --pic_height: 200px;
+}
+
+/* Font
+
+Heading Font : font-family: 'Georgia', Times, Times New Roman, serif;
+
+General Font : 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+
+footer: border-top: 8px solid #4aaaa5;
+*/
+
+/* Global */
+
+/* Make sure padding and margin are 0 so that container can shape content*/
+body{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/* Makes sure that all the items have the same margin */
+.container{
+    width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------- Header ----------*/
+
+header{
+    max-height: 60px;
+    border-bottom: 1px solid var(--main_header);
+}
+
+header #name{
+    background: var(--teal);
+    min-height: 60px;
+    width: 210px;
+    color: white;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+}
+
+/* Centers the name verticall */
+#name h2{
+    margin: 0;
+    padding-top: 14px;
+}
+
+header nav{
+    float: right;
+}
+
+header ul{
+    padding: 19px 0px;
+}
+
+/* Styles the list item div but not the actual item */
+header ul li{
+    list-style: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+/* Every item that has an item before it will be affected */
+header ul li+li{
+    border-left: 1px solid var(--main_content_border);
+}
+
+/*This stiles the link themselves */
+header ul li a{ 
+    text-decoration: none;
+    color: var(--general_font_color);
+    text-align: center;
+}
+
+header ul li a:hover{ 
+    color: var(--teal);
+}
+
+#current{
+    color: var(--teal);
+}
+
+/*------- About me -------*/
+
+#mainBackground{
+    background: var(--main_content_background);
+    padding: 27px 30px 90px 30px;
+    border-bottom: 7px solid var(--teal);
+    height: 545px;
+}
+
+#main{
+    background: white;
+    padding:  1px 20px 20px 20px;
+    border: 0.5px solid var(--main_header);
+}
+
+#main h2{
+    margin-top: 15px;
+    color: var(--teal);
+}
+
+#main img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    float: left;
+    margin-right: 22px;
+}
+
+#main p{
+    line-height: 2;
+    margin-top: 0px;
+    color: var(--general_font_color);
+}
+
+hr{
+    margin-bottom: 30px;
+    color: var(--main_header);
+}
+
+
+/*-------- Footer --------*/
+
+footer{
+    text-align: center;
+    background: #777777;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    padding-top: 35px;
+    color:white;
+    margin: 0;
+}
+
+/*-------- Form --------*/
+
+form p{
+    padding: 5px 0px;
+    margin: 0;
+    height: 20px;
+}
+
+#contactName{
+    padding: 8px;
+    height: 25px;
+    width: 907px;
+}
+
+input[type="email"]{
+    padding: 8px;
+    height: 25px;
+    width: 907px;
+}
+
+#message{
+    padding: 8px;
+    height: 150px;
+    width: 907px;
+}
+
+button{
+    background: var(--teal);
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+/* ----------- Photos area Portfolio  -----------*/
+
+
+#stock1{
+    background: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f?mode=scale&q=90&h=600&w=1200&background=%23288C67") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+}
+
+#stock2{
+    background: url("https://d2wi3xvhr3qrd7.cloudfront.net/wp/wp-content/uploads/2018/01/24144716/f0a6e5d0570c4c804277b2a640b7edf5-1280x720.jpg") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+   
+}
+
+#stock3{
+    background: url("http://rivista-cdn.hourdetroit.com/Hour-Detroit/March-2018/Test-Your-Knowledge-at-These-Trivia-Nights-in-Metro-Detroit/Trivial%20Pursuit.jpg") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+}
+
+#stock4{
+    background: url("https://cdn2.wpbeginner.com/wp-content/uploads/2016/03/usingwidgets.jpg") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+   
+}
+
+#stock5{
+    background: url("https://www.playworks.org/colorado/wp-content/uploads/sites/5/2018/09/finalrps898.jpg") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+   
+}
+
+#stock6{
+    background: url("https://codecondo.com/wp-content/uploads/2014/04/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg") no-repeat center center;
+    background-size: cover;
+    width: var(--pic_width);
+    height: var(--pic_height);
+   
+}
+
+.caption{
+    margin: auto;
+    width: 100%;
+    background: var(--teal);
+    text-align: center;
+}
+
+.caption h3{
+    color: white;
+    margin-top: 60%;
+    padding: 7px 50px;
+}
+
+.stockPhotos{
+    display: inline-block;
+    margin: 5px 5px;
+}
+
